@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -20,7 +22,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 95vw;
+    width: 93vw;
 }
 
 ul {
@@ -57,67 +59,36 @@ a:hover {
     margin-bottom: 20px;
 }
 
-.container {
+.divproj {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 25px;
     margin-bottom: 25px;
-}
-
-.container>div {
-    text-align: center;
-    margin: 20px;
-    padding: 20px;
-    border-radius: 10px;
-    background-color: #222;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 25%;
-    height: 400px;
     gap: 20px;
-    box-shadow: 0px 0px 25px -2px #48B1F5;
-    transition: .4s;
-    display: inline-block;
 }
 
-.container>div>h2 {
-    font-size: 28px;
-    margin-bottom: 15px;
+#area1 {
+    background-image: url(../img/hinos-ibrfm.png);
+    background-size: cover;
+    background-position: center;
+    width: 30vw;
+    height: 120px;
 }
 
-.imgproj {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 8px;
+#area2 {
+    background-image: url(../img/proj-login.png);
+    background-size: cover;
+    background-position: center;
+    width: 30vw;
+    height: 120px;
 }
 
-.btnarq, .btnsite {
-    font-size: 14px;
-    height: 38px;
-    border-radius: 10px;
-    background-color: #3797CE;
-    color: #fff;
-    text-decoration: none;
-    transition: .4s;
-    border: 1px solid #ffffff;
-    width: 100%;
-    margin-top: 10px;
-}
-
-.btnarq {
-    margin-left: 5px;
-}
-
-.divbtn {
-    position: relative;
-    bottom: -80px;
-    display: flex;
-}
-
-.btnarq:hover, .btnsite:hover {
-    background-color: #13689F;
+#area3 {
+    background-image: url(../img/joao-calvino.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 30vw;
+    height: 120px;
 }

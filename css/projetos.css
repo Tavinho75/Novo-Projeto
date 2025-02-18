@@ -1,0 +1,66 @@
+.portfolio-container {
+  display: flex;
+  flex-wrap: wrap; /* Permite quebra automática dos itens */
+  gap: 20px; /* Espaço entre os projetos */
+  justify-content: center; /* Centraliza os projetos na tela */
+  margin: 15px;
+}
+
+/* Cada projeto */
+.project {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  width: 33.32%;
+
+  flex: 1; /* Permite ajuste responsivo */
+}
+
+.project:hover {
+  transform: scale(1.03);
+}
+
+/* Imagem do projeto */
+.project img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Informações do projeto (aparecem no hover) */
+.project-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project:hover .project-info {
+  opacity: 1;
+}
+
+/* Botão */
+.project-info button {
+  background: #fff;
+  border: none;
+  padding: 8px 12px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.project-info button:hover {
+  background: #f4f4f4;
+}
