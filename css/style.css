@@ -31,12 +31,12 @@ ul {
     gap: 20px;
 }
 
-ul li a {
+ul li .anav {
     color: #fff;
     text-decoration: none;
 }
 
-a {
+.anav {
     color: #fff;
     text-decoration: none;
     padding: 12px 15px;
@@ -44,7 +44,7 @@ a {
     transition: .4s;
 }
 
-a:hover {
+.anav:hover {
     color: #ffffff;
     background-color: #222;
 }
@@ -66,29 +66,4 @@ a:hover {
     margin-top: 25px;
     margin-bottom: 25px;
     gap: 20px;
-}
-
-#area1 {
-    background-image: url(../img/hinos-ibrfm.png);
-    background-size: cover;
-    background-position: center;
-    width: 30vw;
-    height: 120px;
-}
-
-#area2 {
-    background-image: url(../img/proj-login.png);
-    background-size: cover;
-    background-position: center;
-    width: 30vw;
-    height: 120px;
-}
-
-#area3 {
-    background-image: url(../img/joao-calvino.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 30vw;
-    height: 120px;
 }

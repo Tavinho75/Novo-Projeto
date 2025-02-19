@@ -14,9 +14,7 @@
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   cursor: pointer;
   transition: transform 0.3s ease;
-  width: 33.32%;
-
-  flex: 1; /* Permite ajuste responsivo */
+  width: 30%;
 }
 
 .project:hover {
@@ -48,19 +46,28 @@
   opacity: 1;
 }
 
-/* Botão */
-.project-info button {
-  background: #fff;
+.project-info p {
+  margin-bottom: 8px;
+}
+
+.btnproj {
+  text-decoration: none;
+  background-color: #222;
+  color: #ffffff;
   border: none;
   padding: 8px 12px;
-  margin-top: 10px;
   cursor: pointer;
   font-size: 14px;
   font-weight: bold;
   border-radius: 5px;
-  transition: 0.3s;
+  transition: 0.4s;
 }
 
-.project-info button:hover {
-  background: #f4f4f4;
+.btnproj>button  {
+  all: initial;
+}
+
+.btnproj:hover {
+  color: #ffffff;
+  background-color: #3796CE;
 }
