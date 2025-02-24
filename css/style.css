@@ -5,6 +5,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 header {
     display: flex;
     align-items: center;
@@ -66,4 +70,8 @@ ul li .anav {
     margin-top: 25px;
     margin-bottom: 25px;
     gap: 20px;
+}
+.container {
+    height: 250px;
+    margin: 0 auto;
 }

@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/projetos.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contato.css">
 </head>
 
 <body>
@@ -16,49 +17,101 @@
             <img src="img/Logo - Tavinho dev.svg" alt="" class="logo">
             <nav>
                 <ul>
-                    <li><a href="#" class="anav">Home</a></li>
-                    <li><a href="#" class="anav">Projetos</a></li>
-                    <li><a href="#" class="anav">Sobre</a></li>
-                    <li><a href="#" class="anav">Contato</a></li>
+                    <li><a href="#home" class="anav">Home</a></li>
+                    <li><a href="#projetos" class="anav">Projetos</a></li>
+                    <li><a href="#sobre" class="anav">Sobre</a></li>
+                    <li><a href="#contato" class="anav">Contato</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    <img src="img/Fundo.png" alt="" class="banner">
-    <div>
-        <h1 style="text-align: center; margin-bottom: 30px;">Conheça os alguns dos meus projetos</h1>
-    </div>
-    <div class="portfolio-container">
-        <div class="project">
-            <img src="img/joao-calvino.png" alt="Projeto 1">
-            <div class="project-info">
-                <h3>Projeto 1</h3>
-                <p>Descrição breve</p>
-                <a href="https://www.chronicled.com" class="btnproj">Saiba Mais</a>
-            </div>
+    <section id="home">
+        <img src="img/Fundo.png" alt="" class="banner">
+    </section>
+    <section id="projetos">
+        <div>
+            <h1 style="text-align: center; margin-bottom: 30px;">Conheça os alguns dos meus projetos</h1>
         </div>
-    
-        <div class="project">
-            <img src="img/joao-calvino.png" alt="Projeto 2">
-            <div class="project-info">
-                <h3>Projeto 2</h3>
-                <p>Outra descrição</p>
-                <a href="https://www.chronicled.com" class="btnproj">Saiba Mais</a>
+        <div class="portfolio-container">
+            <div class="project">
+                <img src="img/joao-calvino.png" alt="Projeto 1">
+                <div class="project-info">
+                    <h3>Projeto 1</h3>
+                    <p>Descrição breve</p>
+                    <a href="https://www.chronicled.com" class="btnproj">Saiba Mais</a>
+                </div>
             </div>
-        </div>
-    
-        <div class="project">
-            <img src="img/joao-calvino.png" alt="Projeto 3">
-            <div class="project-info">
-                <h3>Projeto 3</h3>
-                <p>Mais uma descrição</p>
-                <a href="https://www.chronicled.com" class="btnproj">Saiba Mais</a>
-            </div>
-        </div>
-    </div>
-    
 
-    <script src="js/script.js"></script>
+            <div class="project">
+                <img src="img/joao-calvino.png" alt="Projeto 2">
+                <div class="project-info">
+                    <h3>Projeto 2</h3>
+                    <p>Outra descrição</p>
+                    <a href="https://www.chronicled.com" class="btnproj">Saiba Mais</a>
+                </div>
+            </div>
+
+            <div class="project">
+                <img src="img/joao-calvino.png" alt="Projeto 3">
+                <div class="project-info">
+                    <h3>Projeto 3</h3>
+                    <p>Mais uma descrição</p>
+                    <a href="https://www.chronicled.com" class="btnproj">Saiba Mais</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="sobre">
+        <div class="container">
+            <h2>Sobre</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique aspernatur quo labore totam sapiente
+                amet illum debitis, nesciunt iure itaque explicabo incidunt! A distinctio laboriosam minus ullam
+                doloremque laudantium corporis!</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit, reprehenderit illum! Enim velit possimus
+                harum labore illum, dolorum commodi, consequuntur debitis ipsum ea maxime facilis hic minima aut
+                officia? Iure. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit nihil aspernatur quas
+                saepe at earum quam. Nemo id inventore deserunt error quam iure commodi, quisquam animi repudiandae
+                nobis sapiente voluptate?</p>
+        </div>
+    </section>
+    <section id="contato">
+        <div class="container">
+            <form id="contact-form"> <label for="nome" class="label">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                <label for="email" class="label">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="telefone" class="label">Telefone:</label>
+                <input type="text" inputmode="numeric" id="telefone" name="telefone" placeholder="(00) 00000-0000"
+                    maxlength="15">
+                <label for="assunto" class="label">Assunto:</label>
+                <textarea name="assunto" id="assunto" rows="7"></textarea><br>
+                <input type="submit" value="Enviar" class="envio btnform">
+                <input type="reset" value="Limpar" class="limpar btnform">
+            </form>
+        </div>
+    </section>
+
+    <script src="js/mascara.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script>
+        // Função que envia o e-mail ao submeter o formulário
+        document.getElementById('contact-form').addEventListener('submit', function (event) {
+            event.preventDefault(); // Impede o comportamento padrão do formulário
+
+            // Parâmetros para o serviço de e-mail
+            const serviceID = 'service_84o48jd'; // Substitua com o seu ID de serviço
+            const templateID = 'template_1v9m61j'; // Substitua pelo ID do seu template
+
+            emailjs.sendForm(serviceID, templateID, this)
+                .then(() => {
+                    alert('Email enviado com sucesso!');
+                }, (err) => {
+                    alert('Erro ao enviar o email: ' + JSON.stringify(err));
+                });
+        });
+    </script>
 </body>
 
 </html>
